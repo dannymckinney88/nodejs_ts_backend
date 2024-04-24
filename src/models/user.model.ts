@@ -1,6 +1,3 @@
-// Inside user.model.ts
-
-// Import necessary decorators from sequelize-typescript
 import { Table, Column, Model, PrimaryKey, AutoIncrement, Unique, CreatedAt, UpdatedAt } from 'sequelize-typescript';
 
 // Define an interface for creation attributes

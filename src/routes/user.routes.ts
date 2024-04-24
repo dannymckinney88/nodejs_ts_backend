@@ -10,7 +10,7 @@ router.post('/register', async (req, res) => {
 
     const saltRounds = 10; // Number of salt rounds
 
-let hash: string; 
+let hash: string;""
 
 // Hashing password
 bcrypt.hash(req.body.password_hash, saltRounds, (hashErr: Error | null, hashedPassword: string) => {
@@ -43,7 +43,7 @@ bcrypt.hash(req.body.password_hash, saltRounds, (hashErr: Error | null, hashedPa
     
   const {
     email,
-    password_hash, // Using password_hash to match the model field
+    password_hash, 
     first_name,
     last_name,
     birthdate,
@@ -60,7 +60,7 @@ bcrypt.hash(req.body.password_hash, saltRounds, (hashErr: Error | null, hashedPa
     // Create new user
     const newUser = await User.create({
       email: email,
-      password_hash: password_hash, // Make sure this is consistent with your model field
+      password_hash: password_hash,
     });
 
     // Make sure the user creation was successful before proceeding
@@ -70,7 +70,7 @@ bcrypt.hash(req.body.password_hash, saltRounds, (hashErr: Error | null, hashedPa
   
     // Create associated profile
     const newProfile = await Profile.create({
-      user_id: newUser.id, // Using user_id to match the model field
+      user_id: newUser.id, 
       first_name: first_name,
       last_name: last_name,
       birthdate: birthdate,

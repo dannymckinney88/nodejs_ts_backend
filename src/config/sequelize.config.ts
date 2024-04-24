@@ -16,7 +16,7 @@ export const sequelize = new Sequelize({
     database: process.env.DB_DATABASE,
     models: [User, Profile], // Explicitly list each model
     define: {
-      underscored: true, // Use snake_case rather than camelCase for fields
+      underscored: true, 
     }
   });
 
