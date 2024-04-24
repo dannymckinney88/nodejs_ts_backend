@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "dmckinney",
+    "password": "WhoDey549!@",
+    "database": "fitness_app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "dmckinney",
+    "password": "WhoDey549!@",
+    "database": "fitness_app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "dmckinney",
+    "password": "WhoDey549!@",
+    "database": "fitness_app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
